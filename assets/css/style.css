@@ -98,11 +98,12 @@ img {
 }
 
 .header {
-  background-color: #000;
+  background: transparent;
   position: fixed;
   width: 100%;
   top:0;
   left: 0;
+  z-index: var(--z-fixed);
 }
 
 .nav {
@@ -181,3 +182,90 @@ img {
 .show-menu {
   right: 0;
 }
+
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 1px 4px hsl(0deg 4% 15% / 10%);
+}
+
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle {
+  color: var(--title-color);
+}
+
+.scroll-header .nav__logo-img {
+  mix-blend-mode: difference;
+}
+
+.home__container {
+  padding: 7rem 0 2.5rem;
+  background: linear-gradient( 
+    160deg, 
+    hsla(206, 5%, 24%, 1) -4%, 
+    hsla(206, 12%, 12%, 1) 46%);
+}
+
+.home__title {
+  color: #FFF;
+  font-size: var(--biggest-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.home__title span {
+  color: var(--first-color-alt);
+}
+
+.home__description {
+  margin-bottom: 2rem;
+}
+
+.home__content {
+  position: relative;
+}
+
+.home__data {
+  border-top: 1px solid var(--text-color);
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding-top: 2.5rem;
+  column-gap: 1.5rem;
+  row-gap: 0;
+}
+
+.home__number {
+  color: var(--first-color);
+  font-size: var(--h1-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.home__subtitle {
+  color: #FFF;
+  font-size: var(--h3-font-size);
+  margin-bottom: .5rem;
+}
+
+.home__scroll {
+  animation: scroll 2s infinite;
+  bottom: -7rem;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 6.25rem;
+}
+
+@keyframes scroll {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
