@@ -442,3 +442,23 @@ img {
   transform: translateX(.25rem);
 }
 
+
+.logos__container {
+  align-items: center;
+  border-top: 1px solid var(--text-color);
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 2rem;
+  padding-top: 2rem;
+}
+
+.logo__img {
+  mix-blend-mode: luminosity;
+  transition: .4s;
+  width: 100px;
+  opacity: .7;
+}
+
+.logo__img:hover {
+  opacity: 1;
+}
