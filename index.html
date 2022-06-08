@@ -10,6 +10,11 @@
   </head>
   <body>
   
+    <div class="load" id="load">
+      <img src="./assets/img/loadcoffee.gif" alt="" class="load__gif">
+    </div>
+
+
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
@@ -17,13 +22,9 @@
           Coffe House.
         </a>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-grid-alt"></i>
-        </div> 
-
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
             <li class="nav__item"><a href="#products" class="nav__link">Products</a></li>
             <li class="nav__item"><a href="#premium" class="nav__link">Premium</a></li>
             <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
@@ -33,6 +34,11 @@
             <i class="bx bx-x"></i>
           </div> 
         </div> 
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div> 
+
       </nav> 
     </header> 
 
@@ -72,17 +78,19 @@
         <div class="sepcialty__container">
           <div class="specialty__box">
             <h2 class="section__title">Specialty coffees that make you happy and cheer you up!</h2>
-            <a href="#" class="btn specialty__btn">See More</a>
+            <div>
+              <a href="#" class="btn specialty__btn">See More</a>
+            </div>
           </div>
 
           <div class="specialty__category grid">
-            <div class="specialty__group">
+            <div class="specialty__group specialty__line">
               <img src="assets/img/specialty1.png" alt="beans coffe" class="specialty__img">
               <h2 class="specialty__title">Selected Coffee</h2> 
               <p class="specialty__description">We need the best premium coffee, for a true teste.</p>
             </div>
 
-            <div class="specialty__group">
+            <div class="specialty__group specialty__line">
               <img src="assets/img/specialty2.png" alt="cookie" class="specialty__img">
               <h2 class="specialty__title">Delicious Cookie</h2> 
               <p class="specialty__description">Enjoy your coffee with some hot cookies.</p>
