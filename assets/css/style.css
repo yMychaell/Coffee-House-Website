@@ -421,8 +421,7 @@ img {
 .quality__buttons {
   align-items: center;
   column-gap: 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   text-transform: uppercase;
 }
 
@@ -442,7 +441,6 @@ img {
   transform: translateX(.25rem);
 }
 
-
 .logos__container {
   align-items: center;
   border-top: 1px solid var(--text-color);
@@ -461,4 +459,70 @@ img {
 
 .logo__img:hover {
   opacity: 1;
+}
+
+.blog__content {
+  row-gap: 3rem;
+}
+
+.blog__image {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.blog__img {
+  border-radius: .5rem;
+}
+
+.blog__button {
+  background-color: #FFF;
+  border-radius: .5rem 0 .5rem;
+  color: var(--title-color);
+  display: inline-flex;
+  font-size: 2rem;
+  padding: 1.15rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.blog__button i {
+  transform: rotate(-30deg);
+  transition: .3s ease;
+}
+
+.blog__button:hover i {
+  transform: rotate(-30deg) translate(.25rem);
+}
+
+.blog__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: .75rem;
+}
+
+.blog__description {
+  margin-bottom: 1rem;
+}
+
+.blog__footer,
+.blog__reactions {
+  display: flex;
+  align-items: center;
+}
+
+.blog__reactions i {
+  font-size: 1.2rem;
+  font-weight: var(--font-bold);
+}
+
+.blog__reactions span {
+  font-size: var(--small-font-size);
+}
+
+.blog__footer {
+  column-gap: 1.5rem;
+}
+
+.blog__reactions {
+  column-gap: .25rem;
 }
