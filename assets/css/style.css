@@ -27,8 +27,8 @@
 
   --z-tooltip: 10;
   --z-fixed: 100;
-
 }
+
 
 * {
   box-sizing: border-box;
@@ -81,10 +81,12 @@ img {
 }
 
 .btn {
+  color: #FFF;
   display: inline-block;
   padding: 1rem 1.75rem;
   background-color: var(--black-color);
   border-radius: .25rem;
+  text-transform: uppercase;
 }
 
 .section {
@@ -208,6 +210,10 @@ img {
   mix-blend-mode: difference;
 }
 
+.home__content {
+  position: relative;
+}
+
 .home__container {
   padding: 7rem 0 2.5rem;
   background: linear-gradient( 
@@ -228,10 +234,6 @@ img {
 
 .home__description {
   margin-bottom: 2rem;
-}
-
-.home__content {
-  position: relative;
 }
 
 .home__data {
@@ -368,3 +370,75 @@ img {
   top: -1.25rem;
   right: 1rem;
 }
+
+.quality__content {
+  row-gap: 2.5rem;
+}
+
+.quality__images {
+  position: relative;
+  text-align: center;
+}
+
+.quality__img-big,
+.quality__img-small {
+  border-radius: .25rem;
+}
+
+.quality__img-big {
+  max-width: 280px;
+}
+
+.quality__img-small {
+  position: absolute;
+  top: 0rem;
+  bottom: 0;
+  width: 100px;
+  margin: auto 0;
+  transform: translateX(-5rem);
+}
+
+.quality__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: .75rem;
+}
+
+.quality__price {
+  font-size: var(--h1-font-size);
+  margin-bottom: .25rem;
+}
+
+.quality__especial {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: .75rem;
+}
+
+.quality__description {
+  margin-bottom: 2.5rem;
+}
+
+.quality__buttons {
+  align-items: center;
+  column-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-transform: uppercase;
+}
+
+.quality__button {
+  align-items: center;
+  display: flex;
+  color: var(--title-color);
+  column-gap: .5rem;
+}
+
+.quality__button i {
+  font-size: 1.25rem;
+  transition: .3s ease-in;
+}
+
+.quality__button:hover i {
+  transform: translateX(.25rem);
+}
+
