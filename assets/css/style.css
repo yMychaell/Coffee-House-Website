@@ -309,3 +309,62 @@ img {
 .specialty__group:hover .specialty__img {
   transform: translateY(-.25rem);
 }
+
+.products__filter {
+  column-gap: 2rem;
+  grid-template-columns: repeat(2, 150px);
+  margin-bottom: 3.5rem;
+  row-gap: 2.5rem;
+}
+
+.products__title {
+  color: var(--text-color);
+  margin-bottom: .5rem;
+}
+
+.products__stock {
+  font-size: var(--small-font-size);
+}
+
+.products__content {
+  grid-template-columns: 200px;
+  justify-content: center;
+  row-gap: .5rem;
+}
+
+.products__shape {
+  background-color: var(--card-color);
+  border-radius: .5rem .5rem 0 0;
+  padding: .25rem;
+  text-align: center;
+}
+
+.products__img {
+  width: 150px;
+}
+
+.products__data {
+  padding: 1rem 0 1.5rem 1rem;
+  position: relative;
+}
+
+.products__price {
+  font-size: var(--h1-font-size);
+}
+
+.products__data-title {
+  font-size: var(--normal-font-size);
+}
+
+.products__btn {
+  border-radius: 50%;
+  box-shadow: 0 4px 12px hsl(206deg 4% 4% / 20%);
+  color: #FFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: var(--h2-font-size);
+  padding: .625rem;
+  position: absolute;
+  top: -1.25rem;
+  right: 1rem;
+}
