@@ -80,8 +80,19 @@ img {
   gap: 1.5rem;
 }
 
+.btn {
+  display: inline-block;
+  padding: 1rem 1.75rem;
+  background-color: var(--black-color);
+  border-radius: .25rem;
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
 .section__title {
-  font-size: var(--h2-font-size);
+  font-size: var(--h1-font-size);
   margin-bottom: 2.5rem;
   padding-left: 1.25rem;
   position: relative;
@@ -269,3 +280,32 @@ img {
   }
 }
 
+.specialty__btn {
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.specialty__category {
+  justify-content: center;
+  margin-top: 4rem;
+  row-gap: 3rem;
+}
+
+.specialty__group {
+  width: 200px;
+  text-align: center;
+}
+
+.specialty__img {
+  margin-bottom: .75rem;
+  transition: .4s ease;
+  width: 4.375rem;
+}
+
+.specialty__title {
+  margin-bottom: .5rem;
+}
+
+.specialty__group:hover .specialty__img {
+  transform: translateY(-.25rem);
+}
