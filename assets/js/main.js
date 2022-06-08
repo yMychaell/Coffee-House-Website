@@ -6,13 +6,13 @@ navToggle.addEventListener('click', () => {
 
   navMenu.classList.add('show-menu');
 
-})
+});
 
 navClose.addEventListener('click', () => {
 
   navMenu.classList.remove('show-menu');
 
-})
+});
 
 const navLink = document.querySelectorAll('.nav__link');
 
@@ -20,17 +20,17 @@ const hideMenu = () => {
 
   navMenu.classList.remove('show-menu');
 
-}
+};
 
-navLink.forEach(link => link.addEventListener('click', hideMenu))
+navLink.forEach(link => link.addEventListener('click', hideMenu));
 
 const scrollHeader = () => {
 
-  const header = document.getElementById('header')
+  const header = document.getElementById('header');
 
   if (this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 
-}
+};
 window.addEventListener('scroll', scrollHeader);
 
 let mixerProduct = mixitup('.products__content', {
@@ -41,20 +41,20 @@ let mixerProduct = mixitup('.products__content', {
     duration: 300
   }
 });
-mixerProduct.filter('.delicacies')
+mixerProduct.filter('.delicacies');
+
 
 const categoryProduct = document.querySelectorAll('.products__item');
-
 function activeProduct() {
 
   categoryProduct.forEach(category => category.classList.remove('active-product'))
   this.classList.add('active-product');
 
-}
+};
 categoryProduct.forEach(category => category.addEventListener('click', activeProduct))
 
-const section = document.querySelectorAll('section[id]');
 
+const section = document.querySelectorAll('section[id]');
 function activeSectionMenu() {
 
   const scrollY = window.pageYOffset
@@ -70,11 +70,18 @@ function activeSectionMenu() {
         document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
     }
 
-    console.log(section)
-
   })
 }
 window.addEventListener('scroll', activeSectionMenu)
 
+
+function scrollUp() {
+
+  const scrollUp = document.getElementById('scroll-up')
+
+  if (this.scrollY >= 350) scrollUp.classList.add('show-scrollup'); else scrollUp.classList.remove('show-scrollup');
+
+};
+window.addEventListener('scroll', scrollUp)
 
 
