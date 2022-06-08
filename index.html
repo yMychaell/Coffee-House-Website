@@ -23,7 +23,7 @@
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
             <li class="nav__item"><a href="#products" class="nav__link">Products</a></li>
             <li class="nav__item"><a href="#premium" class="nav__link">Premium</a></li>
             <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
@@ -68,7 +68,7 @@
         <img src="assets/img/home.png" alt="chemex coffe" class="home__img">
       </section>
 
-      <section class="specialty container section" id="specialty">
+      <section class="specialty container section" >
         <div class="sepcialty__container">
           <div class="specialty__box">
             <h2 class="section__title">Specialty coffees that make you happy and cheer you up!</h2>
@@ -105,17 +105,18 @@
           <h2 class="section__title">Choose our delicious and best products</h2>
 
           <ul class="products__filter grid">
-            <li class="products__item">
+
+           <li class="products__item products__line active-product" data-filter=".delicacies">
               <h3 class="products__title">New Delicacies</h3>
               <span class="products__stock">3 products</span>
             </li>
 
-            <li class="products__item">
+            <li class="products__item products__line" data-filter=".coffee">
               <h3 class="products__title">Hot Coffee</h3>
               <span class="products__stock">4 products</span>
             </li>
 
-            <li class="products__item">
+            <li class="products__item" data-filter=".cake">
               <h3 class="products__title">Cakes And Delicacies</h3>
               <span class="products__stock">4 products</span>
             </li>
@@ -206,7 +207,7 @@
               </div> 
             </article>
 
-            <article class="products__card coffee">
+            <article class="products__card cake">
               <div class="products__shape">
                 <img src="assets/img/cake1.png" alt="cake" class="products__img">
               </div>
@@ -218,7 +219,7 @@
               </div> 
             </article>
 
-            <article class="products__card coffee">
+            <article class="products__card cake">
               <div class="products__shape">
                 <img src="assets/img/cake2.png" alt="chocolate croissant" class="products__img">
               </div>
@@ -230,7 +231,7 @@
               </div> 
             </article>
 
-            <article class="products__card coffee">
+            <article class="products__card cake">
               <div class="products__shape">
                 <img src="assets/img/cake3.png" alt="pancake" class="products__img">
               </div>
@@ -242,7 +243,7 @@
               </div> 
             </article>
 
-            <article class="products__card coffee">
+            <article class="products__card cake">
               <div class="products__shape">
                 <img src="assets/img/cake4.png" alt="milk cake" class="products__img">
               </div>
@@ -361,25 +362,25 @@
     <footer class="footer">
       <div class="footer__container container">
         <h1 class="footer__title">Coffee House.</h1>
+        <p class="footer__description">Subscribe to our newsletter</p>
         <div class="footer__content grid">
           <div class="footer__newsletter">
-            <p class="footer__description">Subscribe to our newsletter</p>
             <input type="text" class="footer__input" placeholder="Your email address">
             <button class="footer__button"><i class="bx bx-right-arrow-alt"></i></button>
           </div>
 
           <div class="footer__data">
             <h2 class="footer__data-title">Address</h2>
-            <p class="footer__description">
-              BL C - Asa Sul 70374-410<br>
+            <p class="footer__information">
+              BL F - Asa Sul 70374-410<br>
               Brasília - DF, Brazil 
-              <img src="assets/img/brazil-flag.png" alt="brazil flag">
+              <img src="assets/img/brazil-flag.png" alt="brazil flag" class="footer__flag">
             </p>
           </div> 
 
           <div class="footer__data">
             <h2 class="footer__data-title">Contacts</h2>
-            <p class="footer__description">
+            <p class="footer__information">
               +55 61 99074-1516<br>
               coffehouse@gmail.com
             </p>
@@ -387,7 +388,7 @@
 
           <div class="footer__data">
             <h2 class="footer__data-title">Office</h2>
-            <p class="footer__description">
+            <p class="footer__information">
               Monday - Saturday<br>
               9AM - 10PM
             </p>
@@ -417,6 +418,12 @@
       </div>
     </footer>
 
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt"></i>
+    </a> 
+
+
+    <script src="assets/js/mixitup.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
