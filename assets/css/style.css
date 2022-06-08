@@ -678,4 +678,19 @@ button {
   bottom: 3rem;
 }
 
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: hsla(206, 4%, 80%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsla(206, 4%, 64%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--first-color);
+}
+
+
+
 
