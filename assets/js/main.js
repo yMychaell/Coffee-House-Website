@@ -1,3 +1,15 @@
+onload = () => {
+
+  const load = document.getElementById('load')
+
+  setTimeout(() => {
+
+      load.style.display = 'none'
+
+  }, 2500)
+
+}
+
 const navMenu = document.getElementById('nav-menu'),
   navToggle = document.getElementById('nav-toggle'),
   navClose = document.getElementById('nav-close');
@@ -83,5 +95,3 @@ function scrollUp() {
 
 };
 window.addEventListener('scroll', scrollUp)
-
-
