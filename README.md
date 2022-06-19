@@ -1,12 +1,12 @@
 # Responsive Coffee Website :coffee:
 ---
 
-### Website available at: [Coffe House.](https://ymychaell.github.io/Coffee-House-Website/)
+### Acesse o site em: [Coffe House.](https://ymychaell.github.io/Coffee-House-Website/)
 
 ![Preview](./preview.png)
 
-+ ## Coffee House Website :coffee:
-    + Responsive website using HTML, CSS & JavaScript.
-    + Smooth scrolling in each section.
-    + Developed first with Mobile First methodology, then for desktop.
-    + Compatible with all mobile devices and with a beautiful and pleasant user interface.
++ ## Descrição do projeto
+    + Website responsivo usando HTML, CSS & JavaScript.
+    + Smooth scrolling em cada seção.
+    + Desenvolvindo com a metodologia do First Mobile.
+    + Compativel com todos os dispositivos móveis e com uma UI agradável e bonita :hearts:.
